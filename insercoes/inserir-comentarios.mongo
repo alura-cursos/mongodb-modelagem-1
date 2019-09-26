@@ -102,7 +102,7 @@ db.artigos.update({ slug: "faculdade-e-diploma-sao-necessarios-para-programar" }
                     email: "manuela@example.org",
                     texto: "Parabéns!",
                     data: ISODate('2019-08-21')
-                },
+                }
             ]
         }
     }

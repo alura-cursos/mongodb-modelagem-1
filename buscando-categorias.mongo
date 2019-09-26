@@ -1,0 +1,1 @@
+db.artigos.find({ categorias: "Programação" }).explain("executionStats")

@@ -1,0 +1,48 @@
+db.autores.insertMany([
+    {    
+        nome: "Mario Souto",
+        descricao: "Instrutor de front-end na Alura",
+        email: "mario@alura.com.br",
+        senha: "mario123",
+        artigos: [
+            {
+                slug: "conhecendo-o-flutter-e-uma-visao-do-desenvolvimento-mobile",
+                titulo: "Conhecendo o Flutter, e uma visão do desenvolvimento mobile",
+                conteudo: "Hoje existem diversas formas de criar aplicativos mobile, a padrão é usar Java/Kotlin para codar em Android e Swift/Objetive-C (dependendo do legado que você tem) para programar para o mundo iOS.",
+                dataCriado: ISODate('2019-04-26')
+            },
+            {
+                slug:"como-preparar-uma-aplicacao-react-para-o-deploy",
+                titulo: "Como preparar uma aplicação React para o deploy em um servidor Node",
+                conteudo: "Usando o create-react-app, o build gerado já é extremamente otimizado, caso você tenha um build customizado, super recomendo seguir as dicas na documentação do React para configurar o seu build separado com webpack, rollup ou alguma outra ferramenta de build.",
+                dataCriado: ISODate('2019-03-18')
+            },
+            {
+                slug:"como-compartilhar-seu-localhost-de-forma-simplificada-com-o-ngrok",
+                titulo: "Como compartilhar seu localhost de forma simplificada com o ngrok",
+                conteudo: "Quando estou trabalhando em algum projeto normalmente trabalho com uma versão do código rodando na minha máquina para só depois mandar isso para produção.",
+                dataCriado: ISODate('2019-03-11')
+            }
+        ]
+    },
+    {   
+        nome: "Maurício Aniche",
+        descricao: "Instrutor na Alura",
+        email: "mauricio@alura.com.br",
+        senha: "aniche123",
+        artigos: [
+            {
+                slug: "modelagem-oo-linguagem-oo",
+                titulo: "Modelagem OO > Linguagem OO",
+                conteudo: "Por muito tempo achei que o grande segredo para se desenhar um bom sistema orientado à objetos era conhecer, e muito bem, cada um dos princípios SOLID, encapsulamento, coesão, acoplamento, DDD, padrões de projeto.",
+                dataCriado: ISODate('2019-01-31')
+            },
+            {
+                slug:"seu-repositorio-sabe-tudo-sobre-seu-projeto",
+                titulo: "Seu repositório sabe tudo sobre seu projeto!",
+                conteudo: "Até então, eu já falei bastante sobre códigos fedidos e métricas de código aqui no blog, como por exemplo nos posts sobre complexidade ciclomática, acoplamento, coesão, asserts em testes, e outros maus cheiros. Todos eles até agora, se baseiam no código. E faz todo sentido, claro, afinal, como achar um arquivo Java problemático, sem olhar o código Java desse arquivo?",
+                dataCriado: ISODate('2016-02-04')
+            }
+        ]
+    }
+])

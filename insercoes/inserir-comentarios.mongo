@@ -1,5 +1,4 @@
 
-//Insere os comentários
 db.artigos.update({ slug: "visualizando-dados-de-frequencia" },
     {
     $set: {
@@ -103,6 +102,12 @@ db.artigos.update({ slug: "faculdade-e-diploma-sao-necessarios-para-programar" }
                     texto: "Parabéns!",
                     data: ISODate('2019-08-21')
                 },
+                {
+                    nome: "Mariana",
+                    email: "mariana@example.org",
+                    texto: "Da hora!",
+                    data: ISODate('2019-08-22')
+                }
             ]
         }
     }
@@ -128,6 +133,33 @@ db.artigos.update({ slug: "criando-e-publicando-uma-biblioteca-javascript-no-npm
                     nome: "Melissa",
                     email: "melissa@example.org",
                     texto: "bom!",
+                    data: ISODate('2019-07-23')
+                }
+            ]
+        }
+    }
+);
+
+db.artigos.update({ slug: "projeto-caelum-nas-faculdades" },
+    {
+    $set: {
+        comentarios: [
+                {
+                    nome: "Júlia",
+                    email: "julia@example.org",
+                    texto: "show!",
+                    data: ISODate('2019-05-24')
+                },
+                {
+                    nome: "Maria",
+                    email: "maria@example.org",
+                    texto: "gostei :)",
+                    data: ISODate('2019-06-12')
+                },
+                {
+                    nome: "Hideo",
+                    email: "Hideo@example.org",
+                    texto: "top!",
                     data: ISODate('2019-07-23')
                 }
             ]
